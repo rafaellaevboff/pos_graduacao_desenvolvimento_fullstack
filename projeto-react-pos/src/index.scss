@@ -1,0 +1,13 @@
+//Customizar as variáveis do bootstrap
+$body-bg: #b8b8b8;
+
+//Adicionar o bootstrap e as variáveis default
+@import '~bootstrap/scss/bootstrap';
+
+// Adicionar fonte nova
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+//Atribuir a fonte a todos os elementos
+* {
+  font-family: 'Saira', sans-serif;
+}
