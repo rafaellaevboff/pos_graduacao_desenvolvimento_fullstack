@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import {Link, NavLink} from 'react-router-dom'
-
-interface IMenu {
-    title: string,
-    to: string,
-}
+import { IMenu } from "../../types";
 
 export default function Navbar() {
     const [menus, setMenus] = useState<IMenu[]>([]);
