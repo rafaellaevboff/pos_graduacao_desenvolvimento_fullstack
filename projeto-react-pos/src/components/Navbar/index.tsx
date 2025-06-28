@@ -41,7 +41,9 @@ export default function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {menus.map((item, index) => (
                             <li className="nav-item" key={index}>
-                                <NavLink className={classNames('nav-link')} to={item.to}>{item.title}</NavLink>
+                                <NavLink className={({ isActive }) => {
+                                    return classNames("nav-link", { 'active':isActive})
+                                }} to={item.to}>{item.title}</NavLink>
                             </li>
                         ))}
                     </ul>
